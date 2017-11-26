@@ -21,8 +21,8 @@ def way(choose,size):
             b=[]
         return a
 class Square_Matrix:
-   #size=5
-   #quantity=10
+   size=4
+   quantity=10
    def __init__(self,size,choose):
 
         self.size=size
@@ -33,13 +33,24 @@ class Square_Matrix:
    def __str__(self):
         for i in range(self.size):
             s=str(self.a[i]) + "\n"
+            print(1)
             return s
+   def _import(self):
+        b=int()
+        for i in range(self.size):
+            b=self.a[i][i]+b
+        print(b)
+   def transposition(self):
+        for i in range(self.size):
+            for j in range(self.size):
+                self.a[i+1][j]=self.a[j][i+1]
+        return self.a
 
 
 
-
-
-SM=Square_Matrix(3,1)
+SM=Square_Matrix(2,1)
 print(SM.a)
 SM.get()
 print(SM.__str__())
+SM._import()
+SM.transposition()
