@@ -3,10 +3,10 @@ import math
 
 
 class Yoxoxo:
-    pirat_gold=0
-    pirat_conjuration=0
-    empty=0
     def __init__(self,name,boat_weight):
+        pirat_gold = 0
+        pirat_conjuration = 0
+        empty = 0
         print("Твое имя моряк?")
         self.name = name
         print(self.name)
